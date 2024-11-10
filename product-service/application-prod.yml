@@ -8,5 +8,5 @@ management:
         include:
           - '*'
 product-service:
-  greeting: "Ola"
-  default-value: "Mundo"
+  greeting: "Mudança"
+  default-value: "efetuada"
