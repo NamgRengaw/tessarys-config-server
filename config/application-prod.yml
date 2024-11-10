@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: product-service
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+          - '*'
+product-service:
+  greeting: "Ola"
+  default-value: "Mundo"
