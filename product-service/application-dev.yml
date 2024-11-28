@@ -1,12 +1,26 @@
 spring:
   application:
     name: product-service
+  config:
+    import: optional:configserver:http://localhost:8888/
+  cloud:
+    config:
+      profile: dev
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    datasource:
+      platform: postgres
+      url: jdbc:postgresql://localhost:5432/tesserys
+      username: postgres
+      password: postgres
+server:
+  port: 8010
 management:
   endpoints:
     web:
       exposure:
         include:
           - '*'
-product-service:
-  greeting: "Opa"
-  default-value: "Mundo"
