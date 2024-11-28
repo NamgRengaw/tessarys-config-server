@@ -1,12 +1,21 @@
 spring:
   application:
     name: product-service
+  jpa:
+    datasource:
+      url: jdbc:postgresql://localhost:5432/tesserys
+      username: postgres
+      password: postgres
+      driver-class-name: org.postgresql.Driver
+    database: POSTGRESQL
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+server:
+  port: 8010
 management:
   endpoints:
     web:
       exposure:
         include:
           - '*'
-product-service:
-  greeting: "Opa"
-  default-value: "Mundo"
