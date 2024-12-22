@@ -1,12 +1,12 @@
-#spring:
+spring:
 #  application:
 #    name: product-service
 #  jpa:
-#    datasource:
-#      url: jdbc:postgresql://localhost:5432/tesserys
-#      username: postgres
-#      password: postgres
-#      driver-class-name: org.postgresql.Driver
+    datasource:
+      url: jdbc:postgresql://localhost:5432/product_service
+      username: postgres
+      password: postgres
+      driver-class-name: org.postgresql.Driver
 #    database: POSTGRESQL
 #    show-sql: true
 #    hibernate:
